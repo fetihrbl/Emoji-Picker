@@ -1,38 +1,45 @@
-.App {
+/* App.css */
+
+body {
+  background-color: #f4f1fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.emoji-app {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #4b0082;
+  margin-bottom: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selected-emoji-card {
+  background: #ffffff;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.selected-emoji-card p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.emoji-preview {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+}
+
+.picker-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
